@@ -1,0 +1,24 @@
+@media screen and (min-width: 512px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+        padding: 0;
+    }
+}
