@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    background-color: #fee;
+}
+
+h1 {
+    padding: 1em;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #000;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+}
+
+footer {
+    padding: 1em;
+    background-color: #fdd;
+    text-align: center;
+}
