@@ -1,0 +1,40 @@
+h1,
+h2 {
+    font-family: "UnifrakturCook", serif;
+}
+
+p {
+    font-family: "Quintessential", sans-serif;
+}
+
+a {
+    font-family: "Pirata One", serif;
+}
+
+.color p {
+    font-family: "Pirata One", serif;
+}
+
+.dark {
+    background-color: #5C4033;
+    color: #fff;
+}
+
+.light {
+    background-color: #FCF5E5;
+}
+
+.acc1 {
+    background-color: #DC143C;
+    color: #fff;
+}
+
+.acc2 {
+    background-color: #4169E1;
+    color: #fff;
+}
+
+.text {
+    background-color: #000;
+    color: #fff;
+}
