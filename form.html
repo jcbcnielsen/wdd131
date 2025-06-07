@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Form Activity</title>
+    <meta name="description" content="Page for the WDD131 Form Activity">
+    <meta name="author" content="Jacob Nielsen">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <div class="ver">
+                    <label>Product Name<span class="req"></span>
+                        <select id="pname" name="pname" required>
+                            <option value="" disabled selected>Select a product...</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="ver">Overall Rating<span class="req"></span>
+                    <div class="hor">
+                        <label>&star;<input type="radio" name="rating" value="1" required></label>
+                        <label>&star;&star;<input type="radio" name="rating" value="2" required></label>
+                        <label>&star;&star;&star;<input type="radio" name="rating" value="3" required></label>
+                        <label>&star;&star;&star;&star;<input type="radio" name="rating" value="4" required></label>
+                        <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" value="5" required></label>
+                    </div>
+                </div>
+                <div class="ver">
+                    <label>Date of Installation<span class="req"></span><input type="date" id="instdate" name="instdate" required></label>
+                </div>
+                <div class="ver check">Which features did you find useful in the product? <div class="ital">(check all that apply)</div>
+                    <label><input type="checkbox" id="ufdur" name="useful" value="durability">Durability</label>
+                    <label><input type="checkbox" id="ufease" name="useful" value="ease of use">Ease of Use</label>
+                    <label><input type="checkbox" id="ufperf" name="useful" value="performance">Performance</label>
+                    <label><input type="checkbox" id="ufdes" name="useful" value="design">Design</label>
+                </div>
+                <div class="ver">
+                    <label>Written Review<span class="opt"></span><textarea id="writ" name="writ"></textarea></label>
+                </div>
+                <div class="ver">
+                    <label>Your Name<span class="opt"></span><input type="text" id="uname" name="uname"></label>
+                </div>
+                <div class="ver">
+                    <input type="submit" id="sbutton" value="Post Review">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Jacob Nielsen | Virginia, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

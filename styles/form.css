@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #efe;
+}
+
+header,
+footer {
+    border: 1px solid #000;
+    background-color: #cfc;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+fieldset {
+    max-width: 24rem;
+    margin: 0 auto;
+    background-color: #dfd;
+    padding: 0;
+}
+
+.ver {
+    margin: 1rem;
+    display: block;
+}
+
+.hor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.req::before {
+    content: " (required)";
+    font-style: italic;
+    color: #f00;
+}
+
+.opt::before {
+    content: " (optional)";
+    font-style: italic;
+    color: #00f;
+}
+
+.check label {
+    display: block;
+    margin: .25rem 0;
+}
+
+.hor input {
+    display: block;
+    margin: 0 auto;
+}
+
+.ver select,
+.ver input[type="date"],
+.ver textarea,
+.ver input[type="text"],
+.ver input[type="submit"] {
+    display: block;
+    width: 22rem;
+    height: 3rem;
+}
+
+.ver input[type="submit"] {
+    font-size: 1.2rem;
+}
+
+.ital {
+    font-style: italic;
+}
+
+.check input[type="checkbox"] {
+    margin-right: .5rem;
+}
