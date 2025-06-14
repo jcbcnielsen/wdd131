@@ -1,0 +1,31 @@
+@media screen and (min-width: 500px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 128px 1fr 688px;
+    }
+
+    h1 {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .content {
+        max-width: 720px;
+    }
+}

@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.intro {
+    max-width: 576px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 8px;
+    margin: 0 auto;
+}
+
+.emph {
+    margin-top: 8px;
+    font-family: "Pirata One";
+    font-size: 18px;
+    text-align: center;
+    color: var(--accent-blue);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8px 0;
+    padding: 8px;
+}
+
+.card a {
+    font-family: "Pirata One";
+    text-decoration: none;
+    text-align: right;
+    color: var(--accent-blue);
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 500px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 720px;
+    }
+
+    .emph {
+        margin-top: 16px;
+    }
+
+    .deck {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 8px;
+        margin-top: 16px;
+    }
+}

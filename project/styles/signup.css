@@ -1,0 +1,26 @@
+fieldset {
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+legend {
+    font-family: "Pirata One";
+    font-size: large;
+    color: var(--accent-blue);
+}
+
+form {
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 500px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 720px 1fr;
+    }
+
+    form {
+        margin: 0;
+    }
+}

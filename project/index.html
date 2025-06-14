@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FXBG HEMA - Welcome - WDD131 Project</title>
+    <meta name="description" content="Welcome page for the FXBG HEMA Club for WDD131">
+    <meta name="author" content="Jacob Nielsen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Quintessential&family=UnifrakturCook:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html"><img src="images/logo.webp" alt="Fredericksburg HEMA Logo"></a>
+        <h1>Fredericksburg Historical European Martial Arts Club</h1>
+        <button id="menu"></button>
+        <nav>
+            <a href="#">Home</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Welcome!</h2>
+            <div class="intro">
+                <p>The Fredericksburg Historical European Martial Arts Club is a club in downtown Fredericksburg,
+                    Virginia for learning and practicing historical European combat techniques for both intellecutal and
+                    sporting purposes.</p>
+                <p>We love to teach almost as much as we love to learn, so we provide basic instruction for free to
+                    members and practical lessons for a modest fee. In addition to lessons, we also provide gym space
+                    for members to practice and spar with each other. We hold a tournament once a year in the spring, so
+                    be sure to practice your footwork and techniques in preperation if you wish to participate!</p>
+                <p>Finally, while bringing your own weapons and armor is encouraged, we have rental equipment available
+                    for those who don't wish to bring their own. Please note that while we strive to aquire enough
+                    rental equipment to meet the needs of our members, high demand or unusually sized armor may limit
+                    availability.</p>
+            </div>
+            <p class="emph">Sign Up for free today!</p>
+
+            <div class="deck">
+                <div class="card about">
+                    <h3>What is HEMA?</h3>
+                    <p>HEMA stands for Historical European Martial Arts. While technically covering a much wider span of
+                        history and practices, the majority of enthusiasts and practitioners focus on armed combat
+                        techniques from the Late Middle Ages and Renaissance, and fencing from the Modern period. HEMA
+                        is both a study of history and a combat sport similar to modern fencing.</p>
+                    <a href="https://wikipedia.org/wiki/Historical_European_martial_arts">Learn More...</a>
+                </div>
+
+                <form class="card signup" method="get" action="signup.html">
+                    <h3>Sign Up</h3>
+                    <fieldset>
+                        <label>Name<input type="text" name="name" id="name" placeholder="John Doe"></label>
+                        <label>Email<input type="email" name="email" id="email" placeholder="address@email.com"></label>
+                        <button type="submit" id="sbutton">Sign Up for the Club!</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <picture class="hero">
+            <source srcset="images/hero1-large.webp" media="(min-width: 500px)">
+            <img src="images/hero1-small.webp" alt="Combat Manual of 1467">
+        </picture>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Jacob Nielsen | Virginia, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
